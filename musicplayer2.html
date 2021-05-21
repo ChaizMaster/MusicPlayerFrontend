@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="musicplayercss2.css">
+        <script src="https://kit.fontawesome.com/b81d084714.js" crossorigin="anonymous"></script>
+        <title>
+            MusicPlayer!
+        </title>
+        <script src="musicplayer2.js" defer></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav>
+                <div id="logo">
+                    <img src="logo/logo.jpg" alt=""><br>
+                    <span id="logotext1"><h1>Drip</h1></span><span id="logotext2"><h1>Mu$ic!</h1></span>
+                </div>
+                <div class="notif navicondesign">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="searchbar">
+                    <form>
+                    <button type="submit" class="searchbaricon searchicon" name="searchquery"><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search" class="searchbar searchbarinput">
+                    <button type="submit" class="searchbaricon microphone" name="microphone"><i class="fas fa-microphone"></i></button>
+                    </form>
+                </div>
+                <div class="profile">
+                    <img src="profile/profile.png" alt="profilepic">
+                    <h1>Profile</h1>
+                </div>
+            </nav>
+        </header>
+        <div class="artistinfo container">
+            <div id="artistinfoimg">
+                <img src="Linkin-Park.jpg" alt="artistimg">
+            </div>
+            <div id="description">
+                <h1>Linkin Park</h1><br>
+                <span>American Band</span><br>
+                <span id="followers">2M followers</span>
+                <p>
+                    Linkin Park is an American rock band from Agoura Hills, California. The band's current lineup comprises
+                    vocalist/rhythm guitarist Mike Shinoda, lead guitarist Brad Delson, bassist Dave Farrell, DJ/turntablist Joe Hahn and drummer Rob Bourdon, all of whom are founding members. Vocalists Mark Wakefield and Chester Bennington are 
+                    former members of the band. 
+                </p>
+                <button type="submit" id="playbutton"><i class="fas fa-play-circle"></i><br><h2>Play All!</h2></button>
+                <button type="submit" id="followbutton"><span>Follow</span></button>            
+            </div>
+        </div>
+        <div class="mainaside">
+        <main>
+            <div class="mainqueue">
+                <div>
+                    <span class="num">01</span><img src="aside/aside1.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">02</span><img src="aside/aside2.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">03</span><img src="aside/aside3.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">04</span><img src="aside/aside1.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">05</span><img src="aside/aside2.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">06</span><img src="aside/aside1.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span><i class="far fa-heart"></i></div>
+                <div>
+                    <span class="num">07</span><img src="aside/aside2.jpg" alt=""><span class="mainqueuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+            
+            </div>
+            <h2 class="headingtop">Based On your Listening</h2>
+            <div class="vertical-list">
+                <div id="vertical-image">
+                  <img src="horizontallist/alanwalker.jpg" alt="">  
+                </div>
+                <div id="vlist">
+                   <div><a><span>Adele</span>-Love me like you do!</a></div>
+                   <div><a><span>Martin Garrix</span>-Scared to be lonely</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>Hardwell</span>- Bring it on</a></div>
+                   <div><a><span>Eminem</span>- These Demons</a></div>
+                   <div><a><span>linkinpark</span>- In the End</a></div>
+                   <div><a><span>Tchami</span>- Bounce</a></div>
+                   <div><a><span>Dj Snake</span>- Let me Love you</a></div>
+                   <div><a><span>KSHMR</span>- Secrets</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>Eminem</span>- These Demons</a></div>
+                   <div><a><span>Hardwell</span>- Bring it on</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                   <div><a><span>David Guetta</span>- Titanium</a></div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <h2 class="headingtop">Similar Artists</h2>
+            <div class="queuemain similar">
+                <div>
+                    <span class="num">01</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span><i class="fas fa-ellipsis-h"></i></div>
+                <div>
+                    <span class="num">02</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div>
+                    <span class="num">03</span><img src="aside/aside3.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <h2 class="headingtop">Recently Played</h2>
+            <div class="queuemain">
+                <div>
+                    <span class="num">01</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">02</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">03</span><img src="aside/aside3.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">04</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">05</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div>
+                    <span class="num">06</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span><i class="far fa-heart"></i></div>
+                <div>
+                    <span class="num">07</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                </div>
+                
+            </div>
+        </aside>
+    </div>
+    <div class="musicbar">
+        <div class="back controls"><i class="fas fa-step-backward"></i></div>
+        <div class="play controls"><i class="fas fa-play"></i></div>
+        <div class="forward controls"><i class="fas fa-step-forward"></i></div>
+        <div class="shuffle controls"><i class="fas fa-random"></i></div>
+        <div class="loop controls"><i class="fas fa-redo"></i></div>
+        <div class="musicprogress"><span class="frontprogress">0:00</span> &nbsp _________________________________ &nbsp <span class="endProgress">2:59</span></div>
+        <div class="musicprogressicon"><i class="fas fa-circle"></i></div>
+        <div class="sound controls"><i class="fas fa-volume-up"></i></div>
+        <div class="like controls"><i class="far fa-heart"></i></div>
+        <div class="options controls" id="num14"><i class="fas fa-ellipsis-h"></i></div>
+    </div>
+    
+    </body>
+    </html>

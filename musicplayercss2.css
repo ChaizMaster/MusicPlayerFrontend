@@ -1,0 +1,528 @@
+body{
+    background-color: #121212;
+    display: flex;
+    margin:0;
+    flex-direction: column;
+    justify-content: center;
+    width:95%;
+    margin: 1em 1.8em;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: thin solid rgba(245,245,245,0.2);
+}
+@media (max-width:800px){
+    body{
+    width: 100%;
+}
+}
+/*################
+    text              
+################*/
+body{
+    font-size: 16px;
+}
+@media (max-width:800px){
+    body{
+    font-size:14px;
+}
+nav{
+    flex-wrap: wrap;
+}
+}
+/*################
+  common-classes              
+################*/
+.container{
+    width:100%;
+    margin: 1.5em 0;   
+}
+.headingtop{
+    color: whitesmoke;
+    font-size: 900;
+    font-weight: 600;
+    font-family: 'Segoe UI','Helvetica Neue', sans-serif;
+}
+.banner span{
+    color:whitesmoke;
+    font-size: 900;
+    font-weight: 900;
+    font-family: 'Segoe UI','Helvetica Neue', sans-serif;
+}
+.num{
+    color:whitesmoke;
+}
+.queuecap{
+    position: relative;
+    color:whitesmoke;
+    top: 1em;
+}
+.mainqueuecap{
+    position: relative;
+    color:whitesmoke;
+    bottom: 1.2em;   
+}
+.mainqueue i{
+    color:whitesmoke;
+    position: absolute;
+    right:2em;
+    margin-top: 2em;
+    right:1em;
+}
+.queuemain i{
+    color:whitesmoke;
+    margin-left: 3em;
+    margin-top: 1.5em;
+}
+.cap{
+    color: whitesmoke;
+    position: relative;
+    font-size: 900;
+    font-weight: 900;
+    margin-left: 0.7em;
+}
+@media (max-width:800px){
+    .headingtop{
+        color: whitesmoke;
+        font-size: 800;
+        font-weight: 500;
+        font-family: 'Segoe UI','Helvetica Neue', sans-serif;
+        margin-left: 2em;
+    } 
+}
+/*################
+  navigation            
+################*/
+#logo img{
+    height:100px;
+    width:200px;
+    border-radius: 1.2em;
+}
+#logo span{
+    position: relative;
+    left: 3em; 
+    display: inline-block;   
+    margin-top: -1em;
+}
+#logotext1 h1{
+    font-size: 700;
+    font-family: cursive;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-left: -0.2em;
+}
+#logotext2 h1{
+    font-size: 900;
+    font-family: cursive;
+    color: whitesmoke;
+    font-weight: 800;
+}
+.navicondesign{
+    width: 100px;
+    position: relative;
+    margin-right: 0.6em;
+    margin-left: -1.5em;
+}
+.navicondesign i{
+    position: relative;
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: center;
+    top: 0.7em;
+    margin-left: 1em;
+}
+.notif i{
+    top:0.8em;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.notif i:hover{
+    box-shadow: 0px 0px 8px 8px darkslategray;
+}
+
+.searchbar{
+    width: 50%;
+    position: relative;
+}
+.searchbarinput{
+    width:70%;
+    height:2.5rem;
+    position: relative;
+    top:3em;
+    border: none;
+    padding-left:3em;
+    border-radius: 2em;
+    color: whitesmoke;
+    background-color:rgb(43, 43, 42);
+}
+.searchbar button:focus{
+    outline: none;
+}
+.searchbaricon{
+    font-size: 1.5em;
+    border: none;
+    color: whitesmoke;
+    background-color: transparent;
+}
+.searchicon {
+    position: relative;
+    z-index: 1;
+    top:1.8em;
+    margin-right: -1.7em;
+}
+.microphone{
+    position: relative;
+    z-index: 1;
+    top:1.8em;
+    margin-left: -1.5em;
+}
+
+.profile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.profile h1{
+    color:whitesmoke;
+    position: relative;
+    left:1.8em;
+    top:-0.8em;
+    font-size: medium;
+}
+
+.profile img:hover{
+    box-shadow: 0px 0px 8px 6px darkslategray;
+}
+@media (max-width:800px){
+    #logo span{
+        position: relative;
+        left: 2em; 
+        display: inline-block;   
+        margin-top: -1em;
+    }
+    #logo img{
+        height:100px;
+        width: 150px;
+    }
+
+    .searchbar{
+        order: 2;
+        position: relative;
+        width: 80%;
+        bottom:3em;
+        left:3em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    .searchicon{
+        position: relative;
+        left:2.2em;
+        top:2em;
+    }
+    .microphone{
+        position: relative;
+        top:2em;
+        left:1.5em;
+    }
+    .navicondesign{
+        order:2;
+    }
+    .navicondesign i{
+        font-size: 2.5em;
+    }
+    .profile{
+        margin-left:-2em;
+    }
+    .profile h1{
+        color:whitesmoke;
+        position: relative;
+        font-size: x-large;
+        left:1.7em;
+    }
+    .profile img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    
+}
+/*################
+    artistinfo
+################*/
+.artistinfo{ 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-start;
+    background-color:#202120; 
+}
+#artistinfoimg{
+    width:40%;
+}
+#description{
+    width: 50%;
+    margin-left: 2em;
+}
+#artistinfoimg img{
+    height:400px;
+    width:400px;
+}
+#description h1,span,p{
+    color:whitesmoke;
+    text-align: justify;
+    display: inline-block;
+}
+#description span,p{
+    color:rgba(245,245,245,0.8);
+    margin-bottom: 2em;
+}
+#playbutton{
+    background-color: transparent;
+    border: none;
+}
+#playbutton:focus{
+    outline: none;
+}
+#playbutton i{
+    color:whitesmoke;
+    font-size:3.5em;
+    background-color: transparent;
+}
+#playbutton h2{
+    color:whitesmoke;
+    display: inline-block;
+    margin-top: -0.1em;
+}
+#followbutton{
+    position: relative;
+    left:10em;
+    height: 2.5em;
+    width: 8em;
+    border-radius: 2em;
+    border: none;
+    background-color: whitesmoke;
+}
+#followbutton span{
+    color:black;
+    margin-top:0.6em;
+    font-weight: 900;
+    font-family: monospace;
+}
+#followbutton:focus{
+    outline: none;
+}
+#followbutton:hover{
+    box-shadow: 0px 0px 6px 6px grey;
+}
+
+@media (max-width:1150px){
+    body{
+        width:90%;
+    }
+    #artistinfoimg img{
+        height:300px;
+        width:300px;
+        margin-left:-2em;
+    }
+    #artistinfoimg{
+        margin-left:16em;
+        margin-right: 2em;
+    }
+    #description{
+        width: 100%;
+        margin-left:1em;
+        margin-right: 1em;
+    }
+}
+    @media (max-width:800px){
+        #artistinfoimg img{
+            height: 200px;
+            width: 200px;
+            margin-left:-8em;
+        }
+}  
+/*################
+  main
+################*/
+.mainaside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+}
+main{
+    width: 50%;
+}
+.mainqueue{
+    position: relative;
+    width:100%;
+    margin-left: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.mainqueue div{
+    width:100%;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.mainqueue img{
+    height: 70px;
+    width:70px;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+.vertical-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2em;
+    width: 100%;
+}
+#vertical-image img{
+    height: 200px;
+    width: 200px;
+    margin-top: 3em;
+}
+#vlist{
+    width:65%;
+    position: relative;
+    margin-left: 0.6em;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #202120;
+    margin-bottom: 2em;
+}
+#vlist div{
+    height:60px;
+    border-bottom: 1px solid whitesmoke;
+}
+#vlist div a{
+    color:whitesmoke;
+    margin-left: 3em;
+    position: relative;
+    top:1em;
+}
+#vlist div i{
+    color:whitesmoke;
+    position: relative;
+    left:3em;
+}
+#vlist div span{
+    color:rgba(245,245,245,0.6);
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  @media (max-width:1150px){
+    #vlist{
+        width:100%;
+        position: relative;
+        margin-left: 0.6em;
+        height: 300px;
+        min-width: 350px;
+        overflow-y: auto;
+        background-color: #202120;
+        margin-bottom: 2em;
+    }
+    #vertical-image img{
+        height: 200px;
+        width: 200px;
+        margin-top: 3em;
+        margin-bottom: 2em;
+        margin-left: 5em;
+    }     
+  }
+/*################
+    aside
+################*/
+aside{
+    width: 45%; 
+}
+.queuemain{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    min-width:200px;
+    align-items: center;
+}
+.queuemain div{
+    height: 80px;
+    width:300px;
+    margin: 0.8em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.queuemain i{
+    margin-top: 0.8em;
+}
+.queuemain img{
+    height: 70px;
+    width:70px;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+.similar img{
+    height:100px;
+    width:100px;
+}
+@media (max-width:800px){
+    aside{
+        margin-right:1em;
+        width:100%;     
+    }
+}
+/*
+####################################################
+Music Controls
+####################################################
+*/
+.musicbar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom:1px;
+    background-color: #202120;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: solid 2px whitesmoke;
+    border-left: solid 2px whitesmoke;
+    opacity: 0;
+}
+.musicbar div i{
+    margin-top: 1.5em;
+    color: whitesmoke;
+}
+.musicprogressicon i{
+    position: absolute;
+    left: 35em;
+    bottom:1em;
+}
+.musicprogress{
+    position: relative;
+    margin-top: 1.2em;
+    color: whitesmoke;
+}
+

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="musicplayercss.css">
+        <script src="https://kit.fontawesome.com/b81d084714.js" crossorigin="anonymous"></script>
+        <title>
+            MusicPlayer!
+        </title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" defer></script>
+        <script src="musicplayerjs.js" defer></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav>
+                <div id="logo">
+                    <img src="logo/logo.jpg" alt=""><br>
+                    <span id="logotext1"><h1>Drip</h1></span><span id="logotext2"><h1>Mu$ic!</h1></span>
+                </div>
+                <div class="notif navicondesign">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="searchbar">
+                    <form>
+                    <button type="submit" class="searchbaricon searchicon" name="searchquery"><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search" class="searchbar searchbarinput">
+                    <button type="submit" class="searchbaricon microphone" name="microphone"><i class="fas fa-microphone"></i></button>
+                    </form>
+                </div>
+                <div class="profile">
+                    <img src="profile/profile.png" alt="profilepic">
+                    <h1>Profile</h1>
+                </div>
+            </nav>
+        </header>
+        <h2 class="headingtop">What's New!</h2>
+        <div class="banner" class="container">
+            <div class="bannersec">
+                <div class="imageEffect" id="div1">
+                <img src="Banner/em.webp" alt="" class="bannerImage">
+                <br><span class="cap">SideB</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+                </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div2">
+                <img src="Banner/sk.png" alt="" class="bannerImage">
+                <br><span class="cap">AirRatio</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+            </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div3">
+                <img src="Banner/linkinpark.jpg" alt="" class="bannerImage">
+                <br><span class="cap">Hybrid</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+                </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div4">
+                <img src="Banner/podcast.jpg" alt="" class="bannerImage">
+                <br><span class="cap">PodcastAir</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+                </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div5">
+                <img src="Banner/week.jpg" alt="" class="bannerImage">
+                <br><span class="cap">StarBoy</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+                </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div6">
+                <img src="Banner/jb.png" alt="" class="bannerImage">
+                <br><span class="cap">Believe</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+                </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div7">
+                <img src="Banner/bts.jpg" alt="" class="bannerImage">
+                <br><span class="cap">Dynamite</span>
+                <img src="Banner/playButton.png" alt="" class="play ">
+            </div>
+            </div>
+            <div class="bannersec">
+                <div class="imageEffect" id="div8">
+                <img src="Banner/ed.webp" alt="" class="bannerImage">
+                <br><span class="cap">Divide</span>
+                <img src="Banner/playButton.png" alt="" class="play">
+            </div>
+            </div>
+
+        </div>
+    <div id="mainaside">
+        <main>
+            <h2 class="headingtop">Explore More of What you like</h2>
+            <section class="horizontallist">
+                <a><img src="horizontallist/alanwalker.jpg" alt=""><br><span class="cap">Walk</span></a>
+                <a><img src="horizontallist/davidguetta.jpg" alt=""><br><span class="cap">Airplanes</span></a>
+                <a><img src="horizontallist/djsnake.jpg" alt=""><br><span class="cap">Sahara</span></a>
+                <a><img src="horizontallist/dualipa.jpg" alt=""><br><span class="cap">Physical</span></a>
+                <a><img src="horizontallist/galantis.jpg" alt=""><br><span class="cap">Galantis</span></a>
+                <a><img src="horizontallist/hardwell.jpg" alt=""><br><span class="cap">Kiol</span></a>
+                <a><img src="horizontallist/havana.jpg" alt=""><br><span class="cap">love</span></a>
+                <a><img src="horizontallist/jonasbrothers.jpg" alt=""><br><span class="cap">jake</span></a>
+                <a><img src="horizontallist/kendrick.jpg" alt=""><br><span class="cap">boiunce</span></a>
+                <a><img src="horizontallist/maroon5.jpg" alt=""><br><span class="cap">BadandBoijie</span></a>
+                <a><img src="horizontallist/ncs.jpg" alt=""><br><span class="cap">lockdown</span></a>
+                <a><img src="horizontallist/senorita.png" alt=""><br><span class="cap">Drip</span></a>
+            </section>
+            <h2 class="headingtop">Artists</h2>
+            <section class="artists">
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/davidguettaprofile.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">David Guetta</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/djsnakeprofile.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Dj Snake</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/edsheeranprofile.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Ed Sheeran</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/eminemprofile.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Eminem</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/skrillexprofile.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Skrillex</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/linkinparkprofile.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Linkin Park</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/zayn.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Zayn Malik</span></figure>
+                <figure onclick="window.location='musicplayer2.html'"><img src="artistprofile/martin.jpg" alt=""><img src="Banner/playButton.png" alt="" class=" artistplay "><br><span class="cap">Martin Garrix</span></figure>
+            </section>
+            <h2 class="headingtop">Latest Music</h2>
+            <section class="latest">
+                <h2 class="headingtop">Latest English</h2>
+                <div class="latesteng">
+                <div>
+                    <img src="release/attentionrelease.png" alt=""><br><span class="cap">Attention</span>
+                </div>
+                <div>
+                    <img src="release/eminemrelease.png" alt=""><br><span class="cap">Zeus</span>
+                </div>
+                <div>
+                    <img src="release/selenarelease.jpg" alt=""><br><span class="cap">For you</span>
+                </div>
+                <div>
+                    <img src="release/shapeofurelease.jpeg" alt=""><br><span class="cap">Shape of you</span>
+                </div>
+                <div>
+                    <img src="release/thriftshoprelease.jpg" alt=""><br><span class="cap">Thrift Shape</span>
+                </div>
+                <div>
+                    <img src="horizontallist/kendrick.jpg" alt=""><br><span class="cap">Damn</span>
+                </div>
+                <div>
+                    <img src="horizontallist/ncs.jpg" alt=""><br><span class="cap">Faded</span>
+                </div>
+                <div>
+                    <img src="horizontallist/maroon5.jpg" alt=""><br><span class="cap">Sugar</span>
+                </div>
+                <div>
+                    <img src="horizontallist/senorita.png" alt=""><br><span class="cap">Senorita</span>
+                </div>
+                <div>
+                    <img src="horizontallist/jonasbrothers.jpg" alt=""><br><span class="cap">Blue</span>
+                </div>
+                </div>
+                <h2 class="headingtop">Stations</h2>
+                <div class="stations">
+                    <div>
+                        <img src="stations/music1.jpg" alt=""><br>
+                        <span class="cap">Hot 97</span>
+                    </div>
+                    <div>
+                        <img src="stations/music2.jpg" alt=""><br>
+                        <span class="cap">Tune In</span>
+                    </div>
+                    <div>
+                        <img src="stations/music3.png" alt=""><br>
+                        <span class="cap">Hot 995</span>
+                    </div>
+                    <div>
+                        <img src="stations/music4.jpg" alt=""><br>
+                        <span class="cap">BBC1</span>
+                    </div>
+                    <div>
+                        <img src="stations/music5.jpg" alt=""><br>
+                        <span class="cap">Capital FM</span>
+                    </div>
+                    <div>
+                        <img src="stations/music6.png" alt=""><br>
+                        <span class="cap">AudioBoss</span>
+                    </div>
+                    <div>
+                        <img src="stations/music7.webp" alt=""><br>
+                        <span class="cap">Air</span>
+                    </div>
+                    <div>
+                        <img src="stations/music8.jpg" alt=""><br>
+                        <span class="cap">Hot Radio</span>
+                    </div>
+                    <div>
+                        <img src="stations/music9.jpg" alt=""><br>
+                        <span class="cap">105FM</span>
+                    </div>
+                    <div>
+                        <img src="stations/music10.png" alt=""><br>
+                        <span class="cap">Fish</span>
+                    </div>
+                    </div>
+            </section>
+        </main>
+        <aside>
+            <h2 class="headingtop">Queue</h2>
+            <div class="queuemain">
+                <div class="queueBlock">
+                    <span class="num">01</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num1">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">02</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num2">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">03</span><img src="aside/aside3.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num3">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div class="queueBlock">
+                </div>
+                <div class="queueBlock">
+                    <span class="num">04</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num4">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">05</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num5">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">06</span><img src="aside/aside3.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num6">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">07</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num7">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">08</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num8">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">09</span><img src="aside/aside3.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num9">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">10</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num10">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">11</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num11">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">12</span><img src="aside/aside1.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num12">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+                <div class="queueBlock">
+                    <span class="num">13</span><img src="aside/aside2.jpg" alt=""><span class="queuecap">Mirage<br>Else</span>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ellipsis-v threeDots"></i>
+                    <div class="threeDotDropdown" id="num13">
+                        <div class="share"><i class="fas fa-share-alt"><span>Share</span></i></div>
+                        <div class="addtoqueue"><i class="fas fa-bars"><span>Queue</span></i></div>
+                        <div class="addtoplaylist"><i class="fas fa-clipboard-list"><span>Playlist</span></i></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="musicbar">
+        <div class="back controls"><i class="fas fa-step-backward"></i></div>
+        <div class="play controls"><i class="fas fa-play"></i></div>
+        <div class="forward controls"><i class="fas fa-step-forward"></i></div>
+        <div class="shuffle controls"><i class="fas fa-random"></i></div>
+        <div class="loop controls"><i class="fas fa-redo"></i></div>
+        <div class="musicprogress"><span class="frontprogress">0:00</span> &nbsp _________________________________ &nbsp <span class="endProgress">2:59</span></div>
+        <div class="musicprogressicon"><i class="fas fa-circle"></i></div>
+        <div class="sound controls"><i class="fas fa-volume-up"></i></div>
+        <div class="like controls"><i class="far fa-heart"></i></div>
+        <div class="options controls" id="num14"><i class="fas fa-ellipsis-h"></i></div>
+    </div>
+    </body>
+</html>
